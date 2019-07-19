@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=VthLHxcRzOqpap6k50AbWxqblGlOU8ti&services=&t=20190123111209"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+  <title>chartCase</title>
+</head>
+<body>
+  <div id="home">
+    <span class="goMap" onclick="goMap()">地图</span>
+    <div class="mb_20 clearfix" :gutter="20">
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart1</div>
+          <div id="chart1" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart2</div>
+          <div id="chart2" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mb_20 clearfix" :gutter="20">
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart3</div>
+          <div id="chart3" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart4</div>
+          <div id="chart4" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mb_20 clearfix" :gutter="20">
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart5</div>
+          <div id="chart5" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart6</div>
+          <div id="chart6" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mb_20 clearfix" :gutter="20">
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart7</div>
+          <div id="chart7" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart8</div>
+          <div id="chart8" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mb_20 clearfix" :gutter="20">
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart9</div>
+          <div id="chart9" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+      <div class="w50">
+        <div class="bw">
+          <div class="title">chart10</div>
+          <div id="chart10" style="height:305px;width:100%"></div>
+        </div>
+      </div>
+    </div>
+    <div class="mb_20 clearfix" :gutter="20">
+      <div class="bw">
+        <div class="title">chart11</div>
+        <div id="chart11" style="height:460px;width:100%"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./china.js"></script>
+<script type="text/javascript" src="./myCharts.js"></script>
+<script type="text/javascript" src="./index.js"></script>
+</html>
+<style>
+body {
+  background-color: #f1f1f1;
+}
+#home {
+  padding: 20px;
+}
+.w50 {
+  float: left;
+  width: calc(50% - 20px);
+  margin: 0 10px;
+}
+.bw {
+  background-color: #fff;
+  border-radius: 6px
+}
+.title {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.goMap {
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.goMap:hover {
+  color: #5B82FC;
+}
+.clearfix::after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden
+}
+</style>

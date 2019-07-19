@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=VthLHxcRzOqpap6k50AbWxqblGlOU8ti&services=&t=20190123111209"></script>
+  <script type="text/javascript" src="http://api.map.baidu.com/library/Heatmap/2.0/src/Heatmap_min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/echarts.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-gl/echarts-gl.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts-stat/ecStat.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/dataTool.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/china.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/map/js/world.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/echarts/extension/bmap.min.js"></script>
+  <script type="text/javascript" src="http://echarts.baidu.com/gallery/vendors/simplex.js"></script>
+  <title>map</title>
+</head>
+<body>
+  <div id="map">
+    <span class="goMap" onclick="goBack()">返回</span>
+    <div class="mb_20">
+      <div class="bw">
+        <div class="title">热力图</div>
+        <div id="map_hot" style="height:700px;width:100%"></div>
+      </div>
+    </div>
+    <div>
+      <div class="bw">
+        <div class="title">迁徙图</div>
+        <div id="map_migration" style="height:700px;width:100%"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script type="text/javascript" src="./map.js"></script>
+</html>
+<style>
+body {
+  background-color: #f1f1f1;
+}
+.bw {
+  background-color: #fff;
+  border-radius: 6px;
+  padding: 0 50px;
+}
+.title {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+}
+.mb_20 {
+  margin-bottom: 20px;
+}
+.goMap {
+  display: inline-block;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.goMap:hover {
+  color: #5B82FC;
+}
+.clearfix::after {
+  content:".";
+  display:block;
+  height:0;
+  clear:both;
+  visibility:hidden
+}
+</style>
